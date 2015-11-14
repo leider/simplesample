@@ -1,7 +1,7 @@
 var sinon = require('sinon').sandbox.create();
 var expect = require('must');
 
-describe('wrong stub', function () {
+describe('wrong stub (sinon)', function () {
   var collaborator = {isValidUrl: function () {}};
   var blacklist = ['a', 'b'];
 

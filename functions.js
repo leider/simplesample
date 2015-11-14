@@ -8,7 +8,7 @@ var object = {name: 'Peter'};
 aFunc(object);  // { name: 'Peter' }
 
 // die Signatur einer Funktion wird nur durch ihren Namen festgelegt. Pro Kontext kann es nur eine Definition geben.
-// umbenennen von aFuncWith -> aFunc
+// entfernen des Kontexts
 
 function neuerKontext() {
   function aFunc(theObject) {

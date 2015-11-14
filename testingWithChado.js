@@ -7,7 +7,7 @@ var assume = chado.assume;
 var verify = chado.verify;
 
 
-describe('wrong stub', function () {
+describe('wrong stub (chado)', function () {
   var collaborator = createDouble('aCollaborator');
   var blacklist = ['a', 'b'];
 
