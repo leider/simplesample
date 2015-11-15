@@ -4,7 +4,7 @@
   "description": "additions for a presentation",
   "dependencies": {
     "must": "^0.13.1",
-    "chado": "^0.2.1",
+    "chado": "^0.2.3",
     "sinon": "^1.17.2",
     "mocha": "^2.3.3"
   }
