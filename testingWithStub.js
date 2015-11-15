@@ -33,7 +33,8 @@ describe('wrong stub (sinon)', function () {
     };
     expect(urlValidator.isValidUrl('c', blacklist)).to.be(true);
     expect(urlValidator.isValidUrl('a', blacklist)).to.be(false);
-    expect(sut.isOK(urlValidator, 'a')).to.be(false);
+    
+    expect(sut.isOK(urlValidator, 'a')).to.be(false); // integrated
   });
 
   it('checksTheUrl with swapped arguments', function () {
@@ -44,7 +45,8 @@ describe('wrong stub (sinon)', function () {
     };
     expect(modifiedValidator.isValidUrl(blacklist, 'c')).to.be(true);
     expect(modifiedValidator.isValidUrl(blacklist, 'a')).to.be(false);
-    //expect(sut.isOK(modifiedValidator, 'a')).to.be(false); // broken!
+    
+    //expect(sut.isOK(modifiedValidator, 'a')).to.be(false); // broken! integrated
   })
 });
 

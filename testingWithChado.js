@@ -39,7 +39,8 @@ describe('wrong stub (chado)', function () {
     };
     verify('aCollaborator').canHandle('isValidUrl').withArgs('c', blacklist).andReturns(true).on(urlValidator);
     verify('aCollaborator').canHandle('isValidUrl').withArgs('a', blacklist).andReturns(false).on(urlValidator);
-    expect(sut.isOK(urlValidator, 'a')).to.be(false);
+    
+    expect(sut.isOK(urlValidator, 'a')).to.be(false); // integrated
   });
 
   it('checksTheUrl with swapped arguments', function () {
@@ -50,7 +51,8 @@ describe('wrong stub (chado)', function () {
     };
     verify('aCollaborator').canHandle('isValidUrl').withArgs(blacklist, 'c').andReturns(true).on(modifiedValidator);
     verify('aCollaborator').canHandle('isValidUrl').withArgs(blacklist, 'a').andReturns(false).on(modifiedValidator);
-    //expect(sut.isOK(modifiedValidator, 'a')).to.be(false); // broken!
+    
+    //expect(sut.isOK(modifiedValidator, 'a')).to.be(false); // broken! integrated
   })
 });
 
