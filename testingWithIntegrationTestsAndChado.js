@@ -20,7 +20,7 @@ describe('chado suite', function () {
     });
 
     it('should work when discount is not set', function () {
-      assume(calculator).canHandle('calc').withArgs(50, undefined).andReturns(50);
+      assume(calculator).canHandle('calc').withArgs(50).andReturns(50);
       expect(printer.print(50)).to.be('50 EUR');
     });
   });
@@ -33,7 +33,7 @@ describe('chado suite', function () {
     });
 
     it('should return given price, when discount is not set', function () {
-      verify('calculator').canHandle('calc').withArgs(50, undefined).andReturns(50).on(calculator);
+      verify('calculator').canHandle('calc').withArgs(50).andReturns(50).on(calculator);
     });
   });
 
