@@ -1,0 +1,72 @@
+=====
+TODO: 
+  - echter Koch muss unbedingt andere Farbe haben als der mocked Koch
+  - das "SUT" entsprechend annotieren.
+=====
+
+Storyline:
+
+- Kurzvorstellung Robin / Andreas
+
+============================
+
+- Hintergrund
+
+Strang 1
+- Das Problem von Integrierten Tests - Unterschied zu Integrationstests
+  - jbrains
+  - Kein Feedback über die Stelle des Problems
+  - Keine Sicherheit bzgl. der echten Coverage
+  - HIER NOCH NICHTS ZUR LÖSUNG -
+
+- Outside-In TDD
+  - Ersetzen des Collaborators durch Mock
+  - Definition und Prüfung der erwarteten Aufrufe
+  - Implementierung des Collaborators durch diszipliniertes Halten an die Definitionen der Aufrufe
+  - Implizit
+
+Strang 2
+- objects.js (live)
+  - Prototypes: Schnitzel / Spinat
+  - attribute dazu und weg
+  
+- functions.js (live)
+  - Signatur: argumentanzahl egal, nur der Name zählt
+  - Kontext kann global sein!
+
+=============================
+
+- Zurück in die Gegenwart (FOLIE NOCH NICHT DA)
+  - Integrierte Tests wollen wir auf keinen Fall / Integrationstests schon
+  - London School gefällt uns
+    - viele kleine isolierte Tests
+    - "Heavy Mocking"
+	
+- Ausflug zu Test Doubles
+
+=============================
+
+- Und jetzt alles zusammen
+  - Integration durch assume/verify in chado
+
+- testingWithStub.js
+  - Tester bekommt keinen Hinweis auf das Vorliegen eines Problems
+  
+- testingWithChado.js
+  - chado erkennt es durch fehlende assumptions
+
+- testingWithIntegrationTestsAndStaub.js
+  - ohne echten Test kann es echte Probleme geben!
+  
+- testingWithIntegrationTestsAndChado.js
+  - chado braucht die verification
+    
+- Restaurant
+
+
+=============================
+- Catch Up
+  - Isolierte Tests
+  - Paarweise Integration
+  
+  
