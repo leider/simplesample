@@ -33,6 +33,9 @@ Strang 2
 - functions.js (live)
   - Signatur: argumentanzahl egal, nur der Name zählt
   - Kontext kann global sein!
+  
+- IDE-Unterstützung
+  - umbenennen, löschen von Variablen-/Methodennamen nicht (immer) sicher
 
 =============================
 
@@ -43,11 +46,14 @@ Strang 2
     - "Heavy Mocking"
 	
 - Ausflug zu Test Doubles
-
+  - Unit-Tests mit Mocks können den Programmierer in Sicherheit wiegen
+  - Unit-Tests mit Mocks machen Annahmen über das Programm. Ob die Annahmen stimmen, darüber machen Unit-Tests keine Aussage
 =============================
 
 - Und jetzt alles zusammen
   - Integration durch assume/verify in chado
+  - Jede Annahme muss durch einen Test verifiziert werden.
+  - Und umgekehrt, ein mögliches Verhalten sollte vom Aufrufer auch angenommen werden.
 
 - testingWithStub.js
   - Tester bekommt keinen Hinweis auf das Vorliegen eines Problems
