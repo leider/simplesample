@@ -27,7 +27,7 @@ describe('sinon suite', function () {
     });
 
     it.skip('should return given price, when discount is not set', function () {
-      expect(calculator.calc(50, undefined)).to.be(50);
+      expect(calculator.calc(50)).to.be(50);
     });
   });
 
@@ -51,8 +51,7 @@ function Printer(calculator) {
 function Calculator() {
   return {
     calc: function (price, discount) {
-      //    discount = discount || 0;
-      discount = discount;
+      discount = discount || 0;
       return price / 100 * (100 - discount);
     }
   }

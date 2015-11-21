@@ -72,7 +72,7 @@ Chado-Beispiele Robin
 - testingWithChado.js
   - chado erkennt es durch fehlende assumptions
 
-- testingWithIntegrationTestsAndStaub.js
+- testingWithIntegrationTestsAndStub.js
   - ohne echten Test kann es echte Probleme geben!
   
 - testingWithIntegrationTestsAndChado.js

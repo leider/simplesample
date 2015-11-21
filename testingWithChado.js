@@ -43,7 +43,7 @@ describe('wrong stub (chado)', function () {
     expect(sut.isOK(urlValidator, 'a')).to.be(false); // integrated
   });
 
-  it('checksTheUrl with swapped arguments', function () {
+  it.skip('checksTheUrl with swapped arguments', function () {
     var modifiedValidator = {
       isValidUrl: function (blacklist, urlToTest) {
         return blacklist.indexOf(urlToTest) < 0;

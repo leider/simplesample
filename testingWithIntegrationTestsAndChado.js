@@ -32,7 +32,7 @@ describe('chado suite', function () {
       verify('calculator').canHandle('calc').withArgs(50, 10).andReturns(45).on(calculator);
     });
 
-    it('should return given price, when discount is not set', function () {
+    it.skip('should return given price, when discount is not set', function () {
       verify('calculator').canHandle('calc').withArgs(50).andReturns(50).on(calculator);
     });
   });

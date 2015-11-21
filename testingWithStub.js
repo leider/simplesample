@@ -16,12 +16,12 @@ describe('wrong stub (sinon)', function () {
   });
 
   it('looks good for true', function () {
-    sinon.stub(collaborator, 'isValidUrl', function () { return true });
+    sinon.stub(collaborator, 'isValidUrl', function () { return true; });
     expect(sut.isOK(collaborator, 'c')).to.be(true);
   });
 
   it('looks good for false', function () {
-    sinon.stub(collaborator, 'isValidUrl', function () { return false });
+    sinon.stub(collaborator, 'isValidUrl', function () { return false; });
     expect(sut.isOK(collaborator, 'a')).to.be(false);
   });
 
@@ -37,7 +37,7 @@ describe('wrong stub (sinon)', function () {
     expect(sut.isOK(urlValidator, 'a')).to.be(false); // integrated
   });
 
-  it('checksTheUrl with swapped arguments', function () {
+  it.skip('checksTheUrl with swapped arguments', function () {
     var modifiedValidator = {
       isValidUrl: function (blacklist, urlToTest) {
         return blacklist.indexOf(urlToTest) < 0;
