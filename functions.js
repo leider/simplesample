@@ -1,4 +1,4 @@
-// eine Funktion muss keine Argumente deklarieren; diese sind implizit durch "arguments" immer verfügbar
+// a function needs not declare arguments; they are always available be the special "arguments"
 
 function aFunc() {
   console.log(arguments[0]);
@@ -7,14 +7,14 @@ function aFunc() {
 var object = {name: 'Peter'};
 aFunc(object);  // { name: 'Peter' }
 
-// die Signatur einer Funktion wird nur durch ihren Namen festgelegt. Pro Kontext kann es nur eine Definition geben.
+// a function's signature consists only of the functions's name. This means: per context you can declare a function only once! 
 
-function neuerKontext() {// Was passiert, wenn wir den des Kontexts entfernen?
+function newContext() { // What will happen, if we remove the context?
   function aFunc(theObject) {
-    console.log('NEU! - ' + JSON.stringify(theObject));
+    console.log('NEW! - ' + JSON.stringify(theObject));
   }
 
-  aFunc(object);  // NEU! - {"name":"Peter"}
+  aFunc(object);  // NEW! - {"name":"Peter"}
 }
 
-neuerKontext();
+newContext();
