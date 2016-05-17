@@ -59,7 +59,6 @@ function Calculator() {
 
   return {
     calc: function (price, discount) {
-      discount = discount || 0;
       return price / 100 * (100 - discount);
     }
   }

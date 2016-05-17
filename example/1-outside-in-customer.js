@@ -17,6 +17,7 @@ describe('pizza restaurant', function () {
     it('can successfully order a pizza tonno', function customer() {
       // defining contract; will never be called here
       assume(waiter).canHandle('order').withArgs('pizza tonno').andReturns('pizza tonno');
+      waiter.order('pizza tonno');
     });
   });
 

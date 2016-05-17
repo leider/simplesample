@@ -10,16 +10,16 @@ console.log(object); // { name: 'Peter' }
 
 object.slot1 = 22;
 console.log(object); // { name: 'Peter', 
-                     // slot1: 22 }
+                     //   slot1: 22 }
 
 // keys need to be strings or will be coerced to a string vie "toString()"
 
 object['key with blanks'] = 44;
 object[new Date()] = 'a new Value';
 console.log(object); // { name: 'Peter', 
-                     // slot1: 22, 
-                     // 'key with blanks': 44, 
-                     // 'Fri Nov 20 2015 19:25:42 GMT+0100 (CET)': 'a new Value' }
+                     //   slot1: 22, 
+                     //   'key with blanks': 44, 
+                     //   'Fri Nov 20 2015 19:25:42 GMT+0100 (CET)': 'a new Value' }
 
 // fields can be deleted and created at runtime
 function bFunc(obj) {
@@ -29,7 +29,7 @@ function bFunc(obj) {
 
 bFunc(object);
 console.log(object); // { name: 'Peter', 
-                     // 'key with blanks': 44, 
-                     // 'Fri Nov 20 2015 19:25:42 GMT+0100 (CET)': 'a new Value', 
-                     // slot2: 'someString' }
+                     //   'key with blanks': 44, 
+                     //   'Fri Nov 20 2015 19:25:42 GMT+0100 (CET)': 'a new Value', 
+                     //   slot2: 'someString' }
 

@@ -16,10 +16,14 @@ describe('pizza restaurant', function () {
 
     it('can successfully order a pizza tonno', function customer() {
       assume(waiter).canHandle('order').withArgs('pizza tonno').andReturns('pizza tonno'); // will never be called here
+      waiter.order('pizza tonno');
     });
 
     it('will receive an "Error" if the pizza tonno is not available', function customer() {
       assume(waiter).canHandle('order').withArgs('pizza tonno').andThrowsError('Sorry. Maybe you want to order something else?'); // will never be called here
+      try {
+        waiter.order('pizza tonno'); // throws exception we do not want to handle
+      } catch(e) {};
     });
   });
 
